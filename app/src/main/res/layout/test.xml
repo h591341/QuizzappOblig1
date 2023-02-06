@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <TextView
+        android:id="@+id/tvQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Quiz"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDatabase"
+        app:layout_constraintStart_toStartOf="@+id/tvDatabase" />
+
+
+    <View
+        android:id="@+id/divider1"
+        style="@style/Divider"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDatabase"
+        app:layout_constraintEnd_toEndOf="@+id/tvDatabase"
+        app:layout_constraintStart_toStartOf="@+id/tvQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuiz" />
+
+    <View
+        android:id="@+id/divider2"
+        style="@style/Divider"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAddEntry"
+        app:layout_constraintEnd_toEndOf="@+id/tvDatabase"
+        app:layout_constraintStart_toStartOf="@+id/tvDatabase"
+        app:layout_constraintTop_toBottomOf="@+id/tvDatabase" />
+
+    <TextView
+        android:id="@+id/tvDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Database"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAddEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add Entry"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/tvDatabase"
+        app:layout_constraintTop_toBottomOf="@+id/tvDatabase" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
