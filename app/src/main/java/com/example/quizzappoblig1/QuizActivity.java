@@ -16,6 +16,8 @@ import android.widget.ImageView;
 
 import java.util.Random;
 
+//hey ho
+
 public class QuizActivity extends AppCompatActivity {
 
     ImageView image;
